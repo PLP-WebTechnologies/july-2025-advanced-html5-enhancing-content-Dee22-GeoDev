@@ -10,36 +10,46 @@
 
 <body>
     <header> My Assignment</header>
-    <h2>Frontend languages</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-    </ul>
-    <h2>Backend languages</h2>
-    <ol>
-        <li>PHP</li>
-        <li>Python</li>
-        <li>Ruby</li>
-        <li>Java</li>
-    </ol>
-    <h2>Definition lists</h2>
-    <dl>
-        <dt>HTML</dt>
-        <dd>HyperText Markup Language</dd>
-        <dt>CSS</dt>
-        <dd>Cascading Style Sheets</dd>
-        <dt>JavaScript</dt>
-        <dd>A programming language for web development</dd>
-    </dl>
-    <section id="Media">
-        <h2>Images</h2>
-        <img src="Car.jpg" alt="Image of a car" width="400" height="300">
-        <h2>Videos</h2>
-        <video width="600" height="300 controls">
-            <source src="https://videos.pexels.com/video-files/26824996/12014123_1080_1920_50fps.mp4" type="video/mp4">
-        </video>
+    <section>
+        <h1>Lists</h1>
+        <h2>Frontend languages</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+        <h2>Backend languages</h2>
+        <ol>
+            <li>PHP</li>
+            <li>Python</li>
+            <li>Ruby</li>
+            <li>Java</li>
+        </ol>
+        <h2>Definition lists</h2>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets</dd>
+            <dt>JavaScript</dt>
+            <dd>A programming language for web development</dd>
+        </dl>
     </section>
+    <section>
+        <h1>Media</h1>
+        <h2> Embedding Image</h2>
+        <img src="Car.jpg" alt="Image of a car" width="400" height="300">
+        <h2> Embedding Video</h2>
+        <video controls width="400" height="300">
+            <source src="Video.mp4" type="video/mp4">
+        </video>
+        <br><br>
+        <h2>Embedding Audio</h2>
+        <audio controls>
+            <source src="Audio.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+    <h2>Tables</h2>
     <table border="I">
         <tr>
             <th>Student Name</th>
@@ -77,18 +87,25 @@
     <h2>Forms</h2>
     <form action="#" method="post">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required minlength="3"
+            autocomplete="name">
         <br><br>
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" placeholder="Enter you email" required>
+        <br><br>
+        <label for="gender">Gender:</label>
+        <input type="checkbox" name="gender" id="gender" value="Male">Male
+        <input type="checkbox" name="gender" id="gender" value="Female">Female
         <br><br>
         <label for="age">Age:</label>
         <input type="number" id="age" name="age" placeholder="Enter your age" required>
         <br><br>
         <label for="dob">Date of Birth:</label>
         <input type="date" id="dob" name="dob">
+        <br><br>
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message"></textarea>
+        <br><br>
         <input type="submit" value="Submit">
     </form>
     <footer>
